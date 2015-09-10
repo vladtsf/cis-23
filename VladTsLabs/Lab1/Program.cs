@@ -13,6 +13,8 @@ namespace Lab1
             new SphereTester().RunTests();
             Console.WriteLine();
             new PersonTester().RunTests();
+            Console.WriteLine();
+            new TagMakerTester().RunTests();
 
             #if DEBUG
                 Console.WriteLine();

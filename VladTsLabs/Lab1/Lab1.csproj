@@ -47,6 +47,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sphere\Sphere.cs" />
     <Compile Include="Sphere\SphereTester.cs" />
+    <Compile Include="TagMaker\TagMaker.cs" />
+    <Compile Include="TagMaker\TagMakerTester.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
