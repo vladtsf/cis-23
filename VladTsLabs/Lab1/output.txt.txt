@@ -1,0 +1,103 @@
+Testing Sphere
+new Sphere(3, 4, 5, 6)
+X:3, Y:4, Z:5, Radius:6
+Setting: (X, Y, Z, Radius) to (1,2,3,4)
+X: 1, Y: 2, Z: 3, Radius: 4
+Volume: 268.082573106329
+Surface Area: 201.061929829747
+Done testing the Sphere class!
+
+Testing Person
+<Person#1001 FirstName=Vlad, LastName=Tsvang>
+<Person#1002 FirstName=Paramsothy, LastName=Thananjeyan>
+Setters work...
+<Person#1001 FirstName=Mr. Vlad, LastName=T>
+My name is Mr. Vlad T. Yes, Mr. Vlad T
+My number is 1001 and you never can change it.
+My C# professor is Paramsothy Thananjeyan
+Done testing the Person class!
+
+Testing TagMaker
+Here goes a blank tag
+##############################################################################
+###                           ANNUAL CONFERENCE                            ###
+##############################################################################
+### NAME:                                                                  ###
+###                                                                        ###
+##############################################################################
+### ORGANIZATION:                                                          ###
+###                                                                        ###
+##############################################################################
+
+One ticket for Vlad T from BCC
+##############################################################################
+###                           ANNUAL CONFERENCE                            ###
+##############################################################################
+### NAME: Vlad T                                                           ###
+###                                                                        ###
+##############################################################################
+### ORGANIZATION: BCC                                                      ###
+###                                                                        ###
+##############################################################################
+
+Vlad T just got himself a job at FBI
+##############################################################################
+###                           ANNUAL CONFERENCE                            ###
+##############################################################################
+### NAME: Agent Vlad T                                                     ###
+###                                                                        ###
+##############################################################################
+### ORGANIZATION: FBI                                                      ###
+###                                                                        ###
+##############################################################################
+
+Here goes Vlad T's tag for the broad audience
+##############################################################################
+###                           ANNUAL CONFERENCE                            ###
+##############################################################################
+### NAME:                                                                  ###
+###                                                                        ###
+##############################################################################
+### ORGANIZATION:                                                          ###
+###                                                                        ###
+##############################################################################
+
+Vlad T gets fired :(
+##############################################################################
+###                           ANNUAL CONFERENCE                            ###
+##############################################################################
+### NAME: Agent Vlad T                                                     ###
+###                                                                        ###
+##############################################################################
+### ORGANIZATION:                                                          ###
+###                                                                        ###
+##############################################################################
+
+And goes in hiding...
+##############################################################################
+###                           ANNUAL CONFERENCE                            ###
+##############################################################################
+### NAME:                                                                  ###
+###                                                                        ###
+##############################################################################
+### ORGANIZATION:                                                          ###
+###                                                                        ###
+##############################################################################
+
+Done testing the TagMaker class!
+
+Testing AddressBook
+The first person in the address book is <Person#1003 FirstName=Vlad, LastName=Ts
+vang>
+Yay! The indexer works!
+You cannot add me twice, though...
+Add the professor
+Now find me by name: <Person#1003 FirstName=Vlad, LastName=Tsvang>
+Delete me
+The indexes just shifted: <Person#1004 FirstName=Paramsothy, LastName=Thananjeya
+n>
+Find the professor by his id: <Person#1004 FirstName=Paramsothy, LastName=Thanan
+jeyan>
+Done testing the AddressBook class!
+
+Press enter to close...
