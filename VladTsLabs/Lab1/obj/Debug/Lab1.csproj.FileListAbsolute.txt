@@ -7,3 +7,6 @@ C:\Users\Student\Desktop\vladt\VladTsLabs\Lab1\obj\Debug\Lab1.pdb
 C:\Users\Student\Desktop\vladt\cis-23\VladTsLabs\Lab1\bin\Debug\Lab1.exe.config
 C:\Users\Student\Desktop\vladt\cis-23\VladTsLabs\Lab1\obj\Debug\Lab1.exe
 C:\Users\Student\Desktop\vladt\cis-23\VladTsLabs\Lab1\obj\Debug\Lab1.pdb
+C:\Users\Student\Desktop\vladt\cis-23\VladTsLabs\Lab1\bin\Debug\Lab1.exe
+C:\Users\Student\Desktop\vladt\cis-23\VladTsLabs\Lab1\bin\Debug\Lab1.pdb
+C:\Users\Student\Desktop\vladt\cis-23\VladTsLabs\Lab1\obj\Debug\Lab1.csprojResolveAssemblyReference.cache

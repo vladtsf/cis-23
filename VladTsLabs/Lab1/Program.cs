@@ -11,6 +11,8 @@ namespace Lab1
         static void Main(string[] args)
         {
             new SphereTester().RunTests();
+            Console.WriteLine();
+            new PersonTester().RunTests();
 
             #if DEBUG
                 Console.WriteLine();
