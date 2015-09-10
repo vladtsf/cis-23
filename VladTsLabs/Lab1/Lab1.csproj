@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddressBook\AddressBook.cs" />
+    <Compile Include="AddressBook\AddressBookTester.cs" />
     <Compile Include="Person\Person.cs" />
     <Compile Include="Person\PersonTester.cs" />
     <Compile Include="Program.cs" />

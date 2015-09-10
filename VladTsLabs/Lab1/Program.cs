@@ -15,6 +15,8 @@ namespace Lab1
             new PersonTester().RunTests();
             Console.WriteLine();
             new TagMakerTester().RunTests();
+            Console.WriteLine();
+            new AddressBookTester().RunTests();
 
             #if DEBUG
                 Console.WriteLine();
