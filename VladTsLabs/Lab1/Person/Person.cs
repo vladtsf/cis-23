@@ -89,15 +89,3 @@ namespace Lab1
         }
     }
 }
-
-/*
-Testing Person
-<Person#1001 FirstName=Vlad, LastName=Tsvang>
-<Person#1002 FirstName=Paramsothy, LastName=Thananjeyan>
-Setters work...
-<Person#1001 FirstName=Mr. Vlad, LastName=T>
-My name is Mr. Vlad T. Yes, Mr. Vlad T
-My number is 1001 and you never can change it.
-My C# professor is Paramsothy Thananjeyan
-Done testing the Person class!
-*/

@@ -130,6 +130,18 @@ And goes in hiding...
 ###                                                                        ###
 ##############################################################################
 
+If the name doesn't fit the line, it will say "The value "Lorem ipsum dolor sit
+amet, consectetur adipiscing elit. Praesent aliquam hendrerit neque sit amet tri
+stique. Nullam rhoncus vulputate est, id ullamcorper sem interdum a. Aenean libe
+ro lorem, convallis a velit in, faucibus eleifend erat. Praesent hendrerit fring
+illa nulla, id ultricies odio faucibus eu. Donec ultricies vitae nibh eget lobor
+tis. Donec nec pharetra leo. Maecenas vel maximus lorem. Sed a diam tortor. Morb
+i gravida vestibulum risus, ac accumsan elit sagittis vitae. Nunc id convallis r
+isus. Proin a dolor odio. Cras dictum dui leo, non varius metus mollis sit amet.
+ In eu lorem tincidunt, vestibulum enim vel, tincidunt enim. Nulla ultrices ipsu
+m porta, hendrerit felis a, laoreet massa. Mauris vulputate scelerisque tortor,
+sed dictum leo sagittis vitae. Aliquam non mi sed magna ornare hendrerit in accu
+msan tortor." won't fit the line"
 Done testing the TagMaker class!
 
 */
