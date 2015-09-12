@@ -46,6 +46,15 @@ namespace Lab1
             Tag.ClearName();
             Tag.Print();
 
+            try
+            {
+                Tag.Name = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquam hendrerit neque sit amet tristique. Nullam rhoncus vulputate est, id ullamcorper sem interdum a. Aenean libero lorem, convallis a velit in, faucibus eleifend erat. Praesent hendrerit fringilla nulla, id ultricies odio faucibus eu. Donec ultricies vitae nibh eget lobortis. Donec nec pharetra leo. Maecenas vel maximus lorem. Sed a diam tortor. Morbi gravida vestibulum risus, ac accumsan elit sagittis vitae. Nunc id convallis risus. Proin a dolor odio. Cras dictum dui leo, non varius metus mollis sit amet. In eu lorem tincidunt, vestibulum enim vel, tincidunt enim. Nulla ultrices ipsum porta, hendrerit felis a, laoreet massa. Mauris vulputate scelerisque tortor, sed dictum leo sagittis vitae. Aliquam non mi sed magna ornare hendrerit in accumsan tortor.";
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("If the name doesn't fit the line, it will say \"{0}\"", e.Message);
+            }
+
             Console.WriteLine("Done testing the TagMaker class!");
         }
     }

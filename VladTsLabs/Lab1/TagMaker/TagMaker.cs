@@ -12,6 +12,15 @@ namespace Lab1
         private const int WIDTH = 78;
         private const int MARGIN = 3;
 
+        class ValueIsTooLongException : System.Exception
+        {
+            public ValueIsTooLongException(String value) : base(FormatMessage(value)) { }
+
+            private static string FormatMessage(string value) {
+                return String.Format("The value \"{0}\" won't fit the line", value);
+            }
+        }
+
         public TagMaker(string name, string organization)
         {
             Name = name;
@@ -21,13 +30,25 @@ namespace Lab1
         public string Name
         {
             get { return name; }
-            set { name = value; }
+            set {
+                if (GetPaddings(value)[1] < 0)
+                {
+                    throw new ValueIsTooLongException(value);
+                }
+                name = value; 
+            }
         }
 
         public string Organization
         {
             get { return organization; }
-            set { organization = value; }
+            set {
+                if (GetPaddings(value)[1] < 0)
+                {
+                    throw new ValueIsTooLongException(value);
+                } 
+                organization = value;
+            }
         }
 
         public void ClearName()
