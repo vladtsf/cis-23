@@ -31,7 +31,7 @@ namespace Lab1
         {
             get { return name; }
             set {
-                if (GetPaddings(value)[1] < 0)
+                if (GetPaddings(String.Format("NAME: {0}", value))[1] < 0)
                 {
                     throw new ValueIsTooLongException(value);
                 }
@@ -43,7 +43,7 @@ namespace Lab1
         {
             get { return organization; }
             set {
-                if (GetPaddings(value)[1] < 0)
+                if (GetPaddings(String.Format("ORGANIZATION: {0}", value))[1] < 0)
                 {
                     throw new ValueIsTooLongException(value);
                 } 
