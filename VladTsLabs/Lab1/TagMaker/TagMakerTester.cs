@@ -19,11 +19,6 @@ namespace Lab1
         {
             Console.WriteLine("Testing TagMaker");
 
-            //Console.WriteLine("Setters work...");
-            //Me.FirstName = "Mr. " + Me.GetFirstName();
-            //Me.LastName = "T";
-            //Console.WriteLine(Me);
-
             Console.WriteLine("Here goes a blank tag");
             Tag.PrintBlank();
 
