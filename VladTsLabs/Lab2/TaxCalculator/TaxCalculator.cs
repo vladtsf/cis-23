@@ -6,65 +6,71 @@ using System.Threading.Tasks;
 
 namespace Lab2.TaxCalculator
 {
-    class TaxCalculator
+    public class TaxCalculator
     {
+
+        public class TaxInterval
+        {
+            public int Limit;
+            public double Rate;
+
+            public TaxInterval(int limit, double rate) {
+                Limit = limit;
+                Rate = rate;
+            }           
+        }
+
         private TaxInterval[] intervals;
         private int grossIncome = 0;
 
-        //public TaxCalculator()
-        //    : this(
-        //        TaxInterval.CreateFromDollars(0, 30000, 0F),
-        //        TaxInterval.CreateFromDollars(30000.01, 50000, .1),
-        //        TaxInterval.CreateFromDollars(50000.01, 100000, .2),
-        //        TaxInterval.CreateFromDollars(100000.01, 200000, .3),
-        //        TaxInterval.CreateFromDollars(200000.01, 250000, .35),
-        //        TaxInterval.CreateFromDollars(250000.01, Double.PositiveInfinity, .4)
-        //    ) { }
+        public TaxCalculator()
+            : this(
+                new double[] { 30000, 50000, 100000, 200000, 250000 },
+                new double[] { 0, .1, .2, .3, .35, .4 }
+            ) { }
 
-        //public TaxCalculator(params TaxInterval[] taxIntervals)
-        //{
-        //    Intervals = taxIntervals;
-        //}
+        public TaxCalculator(double[] intervals, double[] rates)
+            : this(intervals.Select(s => DollarsToCents(s)).ToArray(), rates) { }
 
-        public TaxCalculator(params int[] taxIntervals)
+        public TaxCalculator(int[] intervals, double[] rates)
         {
-            TaxInterval[] intervals = new TaxInterval[taxIntervals.Length];
-
-            Array.Sort(taxIntervals);
-
-            for (int i = 1; i < taxIntervals.Length; i++)
+            if (intervals.Length != rates.Length - 1)
             {
-                if (taxIntervals[i] == taxIntervals[i - 1]) {
-                    throw new ArgumentException("The passed intervals must not overlap.");
-                }
+                throw new ArgumentException("You must specify rates for each interval");
             }
 
-            for (int i = 0; i < taxIntervals.Length; i++)
+            Array.Sort(intervals);
+
+
+            Length = rates.Length;
+            this.intervals = new TaxInterval[Length];
+
+            for (int i = 0; i < intervals.Length; i++)
             {
-                //intervals[i] = new TaxInterval((i == 0 ? 0 : taxIntervals[i - 1]), taxIntervals[i])
+                this[i] = new TaxInterval(intervals[i], rates[i]);
             }
+
+            this[intervals.Length] = new TaxInterval(int.MaxValue, rates[intervals.Length]);
+
+            // make sure they're unique
         }
 
-        public TaxInterval[] Intervals
+        public TaxInterval this[int index]
         {
-            get
+            get 
             {
-                return intervals;
+                return intervals[index];
             }
             private set
             {
-                Array.Sort(value);
-
-                for (int i = 1; i < value.Length; i++)
-                {
-                    if (value[i] == value[i - 1])
-                    {
-                        throw new ArgumentException("The passed intervals must not overlap.");
-                    }
-                }
-
-                intervals = value;
+                intervals[index] = value;
             }
+        }
+
+        public int Length
+        {
+            get;
+            private set;
         }
 
         public int GrossIncome
@@ -76,7 +82,7 @@ namespace Lab2.TaxCalculator
 
             set
             {
-                if (value < 0) 
+                if (value < 0)
                 {
                     throw new ArgumentException("An income value could not be negative.");
                 }
@@ -89,14 +95,7 @@ namespace Lab2.TaxCalculator
         {
             get
             {
-                int total = 0;
-
-                foreach (TaxInterval interval in Intervals)
-                {
-                    total += interval.GetNetIncome(GrossIncome);
-                }
-
-                return total;
+                return GrossIncome - Tax;
             }
         }
 
@@ -104,30 +103,35 @@ namespace Lab2.TaxCalculator
         {
             get
             {
-                int total = 0;
+                int tax = 0;
+                int taxed = 0;
+                int remainder = GrossIncome;
 
-                foreach (TaxInterval interval in Intervals)
+                for (int i = 0; i < Length && taxed < remainder; i++)
                 {
-                    total += interval.GetTax(GrossIncome);
+                    int taxBase = Math.Min(remainder - taxed, this[i].Limit - taxed);
+                    tax += (int) (((double) taxBase) * this[i].Rate);
+                    taxed += taxBase;
                 }
 
-                return total;
+                return tax;
             }
         }
 
         public static double CentsToDollars(int cents)
         {
-            return ((double) cents) / 100D;
+            return ((double)cents) / 100D;
         }
 
         public static int DollarsToCents(double dollars)
         {
-            return (int) (dollars * 100D);
+            return (int)(dollars * 100D);
         }
+
 
         public override string ToString()
         {
-            return String.Format("<TaxCalculator gross={0} net={1} tax={2} />", CentsToDollars(GrossIncome), CentsToDollars(NetIncome), CentsToDollars(Tax));
+            return String.Format("<TaxCalculator gross=${0} net=${1} tax=${2} />", CentsToDollars(GrossIncome), CentsToDollars(NetIncome), CentsToDollars(Tax));
         }
     }
 }

@@ -45,7 +45,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TaxCalculator\TaxCalculator.cs" />
     <Compile Include="TaxCalculator\TaxCalculatorTester.cs" />
-    <Compile Include="TaxCalculator\TaxInterval.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
