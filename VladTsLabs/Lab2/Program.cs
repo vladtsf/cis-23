@@ -10,7 +10,8 @@ namespace Lab2
     {
         static void Main(string[] args)
         {
-            TaxCalculator.TaxCalculatorTester.RunTests();
+            //TaxCalculator.TaxCalculatorTester.RunTests();
+            Histogram.RandomNumberTester.RunTests();
 
             #if DEBUG
                 Console.WriteLine();
