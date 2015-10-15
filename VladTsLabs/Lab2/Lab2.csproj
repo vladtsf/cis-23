@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Deck\Card.cs" />
+    <Compile Include="Deck\Deck.cs" />
+    <Compile Include="Deck\DeckTester.cs" />
     <Compile Include="Histogram\Histogram.cs" />
     <Compile Include="Histogram\RandomNumberTester.cs" />
     <Compile Include="Program.cs" />

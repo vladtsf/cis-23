@@ -38,7 +38,7 @@ namespace Lab2.Histogram
             Random rnd = new Random();
             Histogram h = new Histogram(10, 0, 10);
 
-            for (int i = 0; i < 10000; i++)
+            for (int i = 0; i < 1000; i++)
             {
                 double sum = 0;
 
