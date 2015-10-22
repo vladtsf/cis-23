@@ -13,6 +13,7 @@ namespace Lab2
             TaxCalculator.TaxCalculatorTester.RunTests();
             Histogram.RandomNumberTester.RunTests();
             Deck.DeckTester.RunTests();
+            Library.LibraryTester.RunTests();
 
             #if DEBUG
                 Console.WriteLine();

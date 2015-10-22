@@ -55,7 +55,7 @@ namespace Lab2.Deck
             set;
         }
 
-        new public string ToString()
+        public override string ToString()
         {
             return Rank + Suit;
         }

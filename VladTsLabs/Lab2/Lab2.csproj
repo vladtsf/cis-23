@@ -46,6 +46,10 @@
     <Compile Include="Deck\DeckTester.cs" />
     <Compile Include="Histogram\Histogram.cs" />
     <Compile Include="Histogram\RandomNumberTester.cs" />
+    <Compile Include="Library\BookCard.cs" />
+    <Compile Include="Library\LCCN.cs" />
+    <Compile Include="Library\Library.cs" />
+    <Compile Include="Library\LibraryTester.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TaxCalculator\TaxCalculator.cs" />

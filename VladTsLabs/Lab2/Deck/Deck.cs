@@ -43,7 +43,7 @@ namespace Lab2.Deck
             }
         }
 
-        new public string ToString()
+        public override string ToString()
         {
             string result = "";
 
