@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab1
 {
-    class Person
+    public class Person
     {
         private static int LastUsedID = 1000;
         private string firstName, lastName;

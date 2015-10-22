@@ -50,6 +50,12 @@
     <Compile Include="Library\LCCN.cs" />
     <Compile Include="Library\Library.cs" />
     <Compile Include="Library\LibraryTester.cs" />
+    <Compile Include="People\ClassResult.cs" />
+    <Compile Include="People\Employee.cs" />
+    <Compile Include="People\FullTimeEmployee.cs" />
+    <Compile Include="People\HourlyEmployee.cs" />
+    <Compile Include="People\Student.cs" />
+    <Compile Include="People\Workload.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TaxCalculator\TaxCalculator.cs" />
@@ -58,7 +64,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Lab1\Lab1.csproj">
+      <Project>{abc02cbc-1ce5-4f90-8f86-39b237b3ce9e}</Project>
+      <Name>Lab1</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
