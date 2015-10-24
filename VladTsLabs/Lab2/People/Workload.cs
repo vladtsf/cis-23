@@ -10,6 +10,14 @@ namespace Lab2.People
     {
         double first, second, third, fourth;
 
+        public Workload(double first, double second, double third, double fourth)
+        {
+            this.first = first;
+            this.second = second;
+            this.third = third;
+            this.fourth = fourth;
+        }
+
         public double this[int i]
         {
             get

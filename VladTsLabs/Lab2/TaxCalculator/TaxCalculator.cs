@@ -39,6 +39,11 @@ namespace Lab2.TaxCalculator
                 throw new ArgumentException("You must specify rates for each interval");
             }
 
+            if (intervals.Distinct().Count() != intervals.Count())
+            {
+                throw new ArgumentException("The values of the passed list of intervals are not unique");
+            }
+
             Array.Sort(intervals);
 
 
@@ -51,8 +56,6 @@ namespace Lab2.TaxCalculator
             }
 
             this[intervals.Length] = new TaxInterval(int.MaxValue, rates[intervals.Length]);
-
-            // make sure they're unique
         }
 
         public TaxInterval this[int index]

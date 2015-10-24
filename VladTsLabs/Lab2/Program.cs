@@ -14,6 +14,7 @@ namespace Lab2
             Histogram.RandomNumberTester.RunTests();
             Deck.DeckTester.RunTests();
             Library.LibraryTester.RunTests();
+            People.PeopleTester.RunTests();
 
             #if DEBUG
                 Console.WriteLine();

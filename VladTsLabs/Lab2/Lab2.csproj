@@ -54,6 +54,7 @@
     <Compile Include="People\Employee.cs" />
     <Compile Include="People\FullTimeEmployee.cs" />
     <Compile Include="People\HourlyEmployee.cs" />
+    <Compile Include="People\PeopleTester.cs" />
     <Compile Include="People\Student.cs" />
     <Compile Include="People\Workload.cs" />
     <Compile Include="Program.cs" />
