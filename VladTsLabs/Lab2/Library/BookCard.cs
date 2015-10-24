@@ -21,14 +21,14 @@ namespace Lab2.Library
         {
         }
 
-        public BookCard(string Title, List<string> Authors, LCCN CatalogNumber, List<string> SubjectHeadings, string Publisher, int yearOfPublication, bool InCirulation)
+        public BookCard(string Title, List<string> Authors, LCCN CatalogNumber, List<string> SubjectHeadings, string Publisher, int YearOfPublication, bool InCirulation)
         {
             this.Title = Title;
             this.Authors = Authors;
             this.CatalogNumber = CatalogNumber;
             this.SubjectHeadings = SubjectHeadings;
             this.Publisher = Publisher;
-            this.yearOfPublication = yearOfPublication;
+            this.YearOfPublication = YearOfPublication;
             this.InCirulation = InCirulation;
         }
 

@@ -20,7 +20,7 @@ namespace Lab2.Library
                     CatalogNumber: new LCCN(1234560), 
                     SubjectHeadings: new List<string> {"Programming", "C#", "Microsoft"}, 
                     Publisher: "O'Reilly Media", 
-                    yearOfPublication: 2012, 
+                    YearOfPublication: 2012, 
                     InCirulation: true
                 ),
 
@@ -30,7 +30,7 @@ namespace Lab2.Library
                     CatalogNumber: new LCCN(1234561), 
                     SubjectHeadings: new List<string> {"Programming", "C#", "Microsoft"}, 
                     Publisher: " Microsoft Press", 
-                    yearOfPublication: 2013, 
+                    YearOfPublication: 2013, 
                     InCirulation: true
                 ),
 
@@ -40,12 +40,13 @@ namespace Lab2.Library
                     CatalogNumber: new LCCN(1234562), 
                     SubjectHeadings: new List<string> {"Programming", "Java"}, 
                     Publisher: "McGraw-Hill Education", 
-                    yearOfPublication: 2014, 
+                    YearOfPublication: 2014, 
                     InCirulation: false
                 ),
             };
 
-            Console.Write(l.SearchBySubject("C#"));
+            Console.WriteLine(l.SearchBySubject("C#"));
+            Console.WriteLine();
         }
     }
 }
