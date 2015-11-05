@@ -11,6 +11,7 @@ namespace Lab3
         static void Main(string[] args)
         {
             Shapes.ShapesTester.RunTests();
+            RandomWalker.JavaWay.RandomWalkerTester.RunTests();
 
             #if DEBUG
                 Console.WriteLine();

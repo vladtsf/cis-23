@@ -43,6 +43,11 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomWalker\JavaWay\RandomWalker.cs" />
+    <Compile Include="RandomWalker\JavaWay\IRandomWalkerObserver.cs" />
+    <Compile Include="RandomWalker\JavaWay\RandomWalkerObserver.cs" />
+    <Compile Include="RandomWalker\JavaWay\RandomWalkerTester.cs" />
+    <Compile Include="RandomWalker\JavaWay\RandomWalkEvent.cs" />
     <Compile Include="Shapes\Circle.cs" />
     <Compile Include="Shapes\Line.cs" />
     <Compile Include="Shapes\OneDimensionalShape.cs" />
@@ -56,6 +61,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="RandomWalker\CSharpWay\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
