@@ -24,7 +24,7 @@ namespace Lab3.Shapes
 
         public override double GetArea()
         {
-            return 0;
+            return Math.PI * Math.Pow(Radius, 2);
         }
 
         public override void Move(double x, double y, double z)

@@ -24,7 +24,7 @@ namespace Lab3.Shapes
 
         public override double GetLength()
         {
-            return 0;
+            return Math.Sqrt(Math.Pow(P2.X - P1.X, 2) + Math.Pow(P2.Y - P1.Y, 2) + Math.Pow(P2.Z - P1.Z, 2));
         }
 
         public override void Move(double x, double y, double z)

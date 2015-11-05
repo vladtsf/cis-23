@@ -24,12 +24,12 @@ namespace Lab3.Shapes
 
         public override double GetArea()
         {
-            return 0;
+            return 4 * Math.PI * Math.Pow(Radius, 2);
         }
 
         public override double GetVolume()
         {
-            return 0;
+            return (4 * Math.PI * Math.Pow(Radius, 3)) / 3;
         }
 
         public override void Move(double x, double y, double z)
