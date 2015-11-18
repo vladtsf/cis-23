@@ -13,6 +13,7 @@ namespace Lab3
             Shapes.ShapesTester.RunTests();
             RandomWalker.JavaWay.RandomWalkerTester.RunTests();
             RandomWalker.CSharpWay.RandomWalkerTester.RunTests();
+            Temperature.ThermostatTester.RunTests();
 
             #if DEBUG
                 Console.WriteLine();

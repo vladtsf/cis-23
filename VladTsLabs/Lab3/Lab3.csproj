@@ -62,6 +62,11 @@
     <Compile Include="Shapes\ThreeDimensionalShape.cs" />
     <Compile Include="Shapes\TwoDimensionalShape.cs" />
     <Compile Include="Shapes\ZeroDimensionalShape.cs" />
+    <Compile Include="Temperature\TemperatureOutOfRange.cs" />
+    <Compile Include="Temperature\TemperatureTooHigh.cs" />
+    <Compile Include="Temperature\TemperatureTooLow.cs" />
+    <Compile Include="Temperature\Thermostat.cs" />
+    <Compile Include="Temperature\ThermostatTester.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
