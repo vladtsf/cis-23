@@ -12,6 +12,7 @@ namespace Lab3
         {
             Shapes.ShapesTester.RunTests();
             RandomWalker.JavaWay.RandomWalkerTester.RunTests();
+            RandomWalker.CSharpWay.RandomWalkerTester.RunTests();
 
             #if DEBUG
                 Console.WriteLine();

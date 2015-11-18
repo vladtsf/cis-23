@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Lab3.RandomWalker.JavaWay
 {
-    class RandomWalker
+    public class RandomWalker
     {
-        private Random randomizer;
+        protected Random randomizer;
         private List<IRandomWalkerObserver> observers;
-        public int Position { get; private set; }
+        public int Position { get; protected set; }
 
         public RandomWalker()
         {
@@ -19,12 +19,12 @@ namespace Lab3.RandomWalker.JavaWay
             Position = 0;
         }
 
-        public void MakeStep()
+        public virtual void MakeStep()
         {
-            RandomWalkEvent.Directions direction = (randomizer.Next(1000) % 2 == 0)
+            RandomWalkEvent.Directions direction = (randomizer.Next(100000) % 2 == 0)
                 ? RandomWalkEvent.Directions.LEFT
                 : RandomWalkEvent.Directions.RIGHT;
-            
+
             Position += (int) direction;
 
             foreach (IRandomWalkerObserver observer in observers)

@@ -16,7 +16,7 @@ namespace Lab3.RandomWalker.JavaWay
 
             walker.AddObserver(observer);
 
-            for (int i = 0; i < 10000; i++)
+            for (int i = 0; i < 100000; i++)
             {
                 walker.MakeStep();
             }

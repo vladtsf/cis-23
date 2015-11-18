@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab3.RandomWalker.JavaWay
 {
-    struct RandomWalkEvent
+    public struct RandomWalkEvent
     {
         public enum Directions : int {
             LEFT = -1,

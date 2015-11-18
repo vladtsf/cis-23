@@ -10,3 +10,9 @@ C:\Users\Student\Desktop\cis-23\VladTsLabs\Lab3\obj\Debug\Lab3.pdb
 C:\Users\Student\Desktop\cis-23\VladTsLabs\Lab3\bin\Debug\Lab3.exe
 C:\Users\Student\Desktop\cis-23\VladTsLabs\Lab3\bin\Debug\Lab3.pdb
 C:\Users\Student\Desktop\cis-23\VladTsLabs\Lab3\obj\Debug\Lab3.csprojResolveAssemblyReference.cache
+C:\Users\vladt\Desktop\workspace\cis-23\VladTsLabs\Lab3\bin\Debug\Lab3.exe.config
+C:\Users\vladt\Desktop\workspace\cis-23\VladTsLabs\Lab3\obj\Debug\Lab3.exe
+C:\Users\vladt\Desktop\workspace\cis-23\VladTsLabs\Lab3\obj\Debug\Lab3.pdb
+C:\Users\vladt\Desktop\workspace\cis-23\VladTsLabs\Lab3\bin\Debug\Lab3.exe
+C:\Users\vladt\Desktop\workspace\cis-23\VladTsLabs\Lab3\bin\Debug\Lab3.pdb
+C:\Users\vladt\Desktop\workspace\cis-23\VladTsLabs\Lab3\obj\Debug\Lab3.csprojResolveAssemblyReference.cache

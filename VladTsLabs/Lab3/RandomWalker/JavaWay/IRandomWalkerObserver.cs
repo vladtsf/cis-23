@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab3.RandomWalker.JavaWay
 {
-    interface IRandomWalkerObserver
+    public interface IRandomWalkerObserver
     {
         void Moved(RandomWalkEvent evt);
     }
