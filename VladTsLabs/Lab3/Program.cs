@@ -14,6 +14,7 @@ namespace Lab3
             RandomWalker.JavaWay.RandomWalkerTester.RunTests();
             RandomWalker.CSharpWay.RandomWalkerTester.RunTests();
             Temperature.ThermostatTester.RunTests();
+            Fractions.FractionTester.RunTests();
 
             #if DEBUG
                 Console.WriteLine();

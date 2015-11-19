@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fractions\Fraction.cs" />
+    <Compile Include="Fractions\FractionTester.cs" />
+    <Compile Include="Fractions\FractionUninitializedException.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RandomWalker\CSharpWay\RandomWalker.cs" />

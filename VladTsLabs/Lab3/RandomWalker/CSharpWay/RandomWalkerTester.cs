@@ -27,7 +27,7 @@ namespace Lab3.RandomWalker.CSharpWay
 /*
 Testing RandomWalker(c# way)
 It took the walker 27 steps to move 5 steps in the left direction
-It took the walker 74 steps to move 10 steps in the left direction
+It  qws took the walker 74 steps to move 10 steps in the left direction
 It took the walker 125 steps to move 15 steps in the left direction
 It took the walker 130 steps to move 20 steps in the left direction
 It took the walker 387 steps to move 5 steps in the right direction
