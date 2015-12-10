@@ -1,13 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Lab4.Library
 {
-    class Library : List<BookCard>
+    [Serializable]
+    public class Library : List<BookCard>, ISerializable
     {
+        public void GetObjectData(SerializationInfo info, StreamingContext context)
+        {
+            info.AddValue("Books", this.ToList());
+        }
+
+        public Library(SerializationInfo info, StreamingContext context)
+        {
+            List<BookCard> books = (List<BookCard>) info.GetValue("Books", typeof(List<BookCard>));
+
+            foreach(BookCard book in books)
+            {
+                this.Add(book);
+            }
+        }
+
+        public Library() : base() { }
+
         public Library SearchBySubject(string subject)
         {
             Library found = new Library();
@@ -16,9 +35,12 @@ namespace Lab4.Library
             {
                 foreach (string _subject in card.SubjectHeadings)
                 {
-                    if (_subject.Equals(subject))
+                    if (_subject.Contains(subject))
                     {
-                        found.Add(card);
+                        if(!found.Contains(card))
+                        {
+                            found.Add(card);
+                        }
                     }
                 }
             }

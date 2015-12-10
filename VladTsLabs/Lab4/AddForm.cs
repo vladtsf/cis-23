@@ -13,6 +13,12 @@ namespace Lab4
 {
     public partial class AddForm : Form
     {
+        private Form1 parent;
+
+        public AddForm(Form1 parentForm) : this()
+        {
+            parent = parentForm;
+        }
         public AddForm()
         {
             InitializeComponent();
@@ -24,15 +30,16 @@ namespace Lab4
 
             Library.BookCard book = new Library.BookCard(
                 Title: bookTitle.Text,
-                Authors: new List<string>(Regex.Split(bookAuthors.Text, splitPattern)),
+                Authors: new Library.BookCard.ListOfStrings(Regex.Split(bookAuthors.Text, splitPattern)),
                 CatalogNumber: new Library.LCCN((int) bookLccn.Value),
-                SubjectHeadings: new List<string>(Regex.Split(bookSubjectHeadings.Text, splitPattern)),
+                SubjectHeadings: new Library.BookCard.ListOfStrings(Regex.Split(bookSubjectHeadings.Text, splitPattern)),
                 Publisher: bookPublisher.Text,
                 YearOfPublication: (int) bookYear.Value,
                 InCirulation: bookCirculating.Checked
             );
 
             Program.BookLibrary.Add(book);
+            parent.RefreshTable();
             this.Close();
         }
     }

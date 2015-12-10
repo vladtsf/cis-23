@@ -61,7 +61,6 @@
     <Compile Include="Library\BookCard.cs" />
     <Compile Include="Library\LCCN.cs" />
     <Compile Include="Library\Library.cs" />
-    <Compile Include="Library\LibraryTester.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AddForm.resx">
