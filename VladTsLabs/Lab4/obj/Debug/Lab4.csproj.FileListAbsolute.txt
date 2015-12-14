@@ -1,11 +1,11 @@
 C:\Users\vladt\Desktop\workspace\cis-23\VladTsLabs\Lab4\bin\Debug\Lab4.exe.config
 C:\Users\vladt\Desktop\workspace\cis-23\VladTsLabs\Lab4\bin\Debug\Lab4.exe
 C:\Users\vladt\Desktop\workspace\cis-23\VladTsLabs\Lab4\bin\Debug\Lab4.pdb
-C:\Users\vladt\Desktop\workspace\cis-23\VladTsLabs\Lab4\obj\Debug\Lab4.csprojResolveAssemblyReference.cache
+C:\Users\vladt\Desktop\workspace\cis-23\VladTsLabs\Lab4\obj\Debug\Lab4.AboutForm.resources
+C:\Users\vladt\Desktop\workspace\cis-23\VladTsLabs\Lab4\obj\Debug\Lab4.AddForm.resources
 C:\Users\vladt\Desktop\workspace\cis-23\VladTsLabs\Lab4\obj\Debug\Lab4.Form1.resources
 C:\Users\vladt\Desktop\workspace\cis-23\VladTsLabs\Lab4\obj\Debug\Lab4.Properties.Resources.resources
 C:\Users\vladt\Desktop\workspace\cis-23\VladTsLabs\Lab4\obj\Debug\Lab4.csproj.GenerateResource.Cache
 C:\Users\vladt\Desktop\workspace\cis-23\VladTsLabs\Lab4\obj\Debug\Lab4.exe
 C:\Users\vladt\Desktop\workspace\cis-23\VladTsLabs\Lab4\obj\Debug\Lab4.pdb
-C:\Users\vladt\Desktop\workspace\cis-23\VladTsLabs\Lab4\obj\Debug\Lab4.AddForm.resources
-C:\Users\vladt\Desktop\workspace\cis-23\VladTsLabs\Lab4\obj\Debug\Lab4.AboutForm.resources
+C:\Users\vladt\Desktop\workspace\cis-23\VladTsLabs\Lab4\obj\Debug\Lab4.csprojResolveAssemblyReference.cache

@@ -1,0 +1,6 @@
+C:\Users\vladt\Desktop\workspace\cis-23\VladTsLabs\Lab1\bin\Release\Lab1.exe.config
+C:\Users\vladt\Desktop\workspace\cis-23\VladTsLabs\Lab1\bin\Release\Lab1.exe
+C:\Users\vladt\Desktop\workspace\cis-23\VladTsLabs\Lab1\bin\Release\Lab1.pdb
+C:\Users\vladt\Desktop\workspace\cis-23\VladTsLabs\Lab1\obj\Release\Lab1.csprojResolveAssemblyReference.cache
+C:\Users\vladt\Desktop\workspace\cis-23\VladTsLabs\Lab1\obj\Release\Lab1.exe
+C:\Users\vladt\Desktop\workspace\cis-23\VladTsLabs\Lab1\obj\Release\Lab1.pdb
