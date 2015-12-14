@@ -10,6 +10,7 @@ namespace Lab4.Library
     [Serializable]
     public class BookCard : ISerializable
     {
+        [Serializable]
         public class ListOfStrings : List<string>
         {
             public override string ToString()
@@ -78,24 +79,24 @@ namespace Lab4.Library
         public void GetObjectData(SerializationInfo info, StreamingContext context)
         {
             info.AddValue("Title", Title);
-            //info.AddValue("Authors", Authors);
-            //info.AddValue("CatalogNumber", CatalogNumber);
-            //info.AddValue("SubjectHeadings", SubjectHeadings);
+            info.AddValue("Authors", Authors);
+            info.AddValue("CatalogNumber", (int) CatalogNumber);
+            info.AddValue("SubjectHeadings", SubjectHeadings);
             info.AddValue("Publisher", Publisher);
             info.AddValue("YearOfPublication", YearOfPublication);
             info.AddValue("InCirulation", InCirulation);
         }
 
-        public BookCard(SerializationInfo info, StreamingContext context) {
-            Title = (string)info.GetValue("Title", typeof(string));
-            //Title = (string)info.GetValue("Title", typeof(string));
-            //info.AddValue("CatalogNumber", CatalogNumber);
-            //Authors = (ListOfStrings)info.GetValue("Authors", typeof(ListOfStrings));
-            //SubjectHeadings = (ListOfStrings)info.GetValue("SubjectHeadings", typeof(ListOfStrings));
-            Publisher = (string)info.GetValue("Publisher", typeof(string));
-            YearOfPublication = (int)info.GetValue("YearOfPublication", typeof(int));
-            InCirulation = (bool)info.GetValue("InCirulation", typeof(bool));
-        }
-
+        public BookCard(SerializationInfo info, StreamingContext context)
+            : this(
+                  Title: (string)info.GetValue("Title", typeof(string)),
+                  Publisher: (string)info.GetValue("Publisher", typeof(string)),
+                  YearOfPublication: (int)info.GetValue("YearOfPublication", typeof(int)),
+                  InCirulation: (bool)info.GetValue("InCirulation", typeof(bool)),
+                  Authors: (ListOfStrings) info.GetValue("Authors", typeof(ListOfStrings)),
+                  SubjectHeadings: (ListOfStrings)info.GetValue("SubjectHeadings", typeof(ListOfStrings)),
+                  CatalogNumber: new LCCN((int) info.GetValue("CatalogNumber", typeof(int)))
+              )
+        {}
     }
 }

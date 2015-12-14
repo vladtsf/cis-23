@@ -39,6 +39,9 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.search = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.topMenuAbout = new System.Windows.Forms.ToolStripMenuItem();
+            this.topMenuSaveAs = new System.Windows.Forms.ToolStripMenuItem();
             this.topMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -48,7 +51,8 @@
             this.topMenu.ImageScalingSize = new System.Drawing.Size(28, 28);
             this.topMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
-            this.editToolStripMenuItem});
+            this.editToolStripMenuItem,
+            this.helpToolStripMenuItem});
             this.topMenu.Location = new System.Drawing.Point(0, 0);
             this.topMenu.Name = "topMenu";
             this.topMenu.Size = new System.Drawing.Size(1362, 38);
@@ -60,6 +64,7 @@
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.topMenuNew,
             this.topMenuOpen,
+            this.topMenuSaveAs,
             this.topMenuSave,
             this.topMenuExit});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
@@ -69,7 +74,7 @@
             // topMenuNew
             // 
             this.topMenuNew.Name = "topMenuNew";
-            this.topMenuNew.Size = new System.Drawing.Size(156, 34);
+            this.topMenuNew.Size = new System.Drawing.Size(240, 34);
             this.topMenuNew.Text = "New";
             this.topMenuNew.Click += new System.EventHandler(this.topMenuNew_Click);
             // 
@@ -91,7 +96,7 @@
             // topMenuExit
             // 
             this.topMenuExit.Name = "topMenuExit";
-            this.topMenuExit.Size = new System.Drawing.Size(156, 34);
+            this.topMenuExit.Size = new System.Drawing.Size(240, 34);
             this.topMenuExit.Text = "Exit";
             this.topMenuExit.Click += new System.EventHandler(this.topMenuExit_Click);
             // 
@@ -107,7 +112,7 @@
             // 
             this.topMenuAdd.Enabled = false;
             this.topMenuAdd.Name = "topMenuAdd";
-            this.topMenuAdd.Size = new System.Drawing.Size(143, 34);
+            this.topMenuAdd.Size = new System.Drawing.Size(240, 34);
             this.topMenuAdd.Text = "Add";
             this.topMenuAdd.Click += new System.EventHandler(this.topMenuAdd_Click);
             // 
@@ -144,6 +149,29 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Search";
             // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.topMenuAbout});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(68, 34);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // topMenuAbout
+            // 
+            this.topMenuAbout.Name = "topMenuAbout";
+            this.topMenuAbout.Size = new System.Drawing.Size(240, 34);
+            this.topMenuAbout.Text = "About";
+            this.topMenuAbout.Click += new System.EventHandler(this.topMenuAbout_Click);
+            // 
+            // topMenuSaveAs
+            // 
+            this.topMenuSaveAs.Enabled = false;
+            this.topMenuSaveAs.Name = "topMenuSaveAs";
+            this.topMenuSaveAs.Size = new System.Drawing.Size(240, 34);
+            this.topMenuSaveAs.Text = "Save As";
+            this.topMenuSaveAs.Click += new System.EventHandler(this.topMenuSaveAs_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
@@ -158,7 +186,8 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.ShowIcon = false;
+            this.Text = "CIS-23 Book Library";
             this.topMenu.ResumeLayout(false);
             this.topMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -180,6 +209,9 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox search;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem topMenuAbout;
+        private System.Windows.Forms.ToolStripMenuItem topMenuSaveAs;
     }
 }
 

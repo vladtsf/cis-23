@@ -212,6 +212,9 @@
             this.Controls.Add(this.bookTitle);
             this.Controls.Add(this.label1);
             this.Name = "AddForm";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Add Form";
             ((System.ComponentModel.ISupportInitialize)(this.bookYear)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookLccn)).EndInit();

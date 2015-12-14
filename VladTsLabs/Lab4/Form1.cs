@@ -48,6 +48,7 @@ namespace Lab4
         private void Enable()
         {
             topMenuAdd.Enabled = true;
+            topMenuSaveAs.Enabled = true;
             topMenuSave.Enabled = true;
             search.Enabled = true;
         }
@@ -113,6 +114,17 @@ namespace Lab4
                 RefreshTable();
                 Enable();
             }
+        }
+
+        private void topMenuAbout_Click(object sender, EventArgs e)
+        {
+            new AboutForm().ShowDialog();
+        }
+
+        private void topMenuSaveAs_Click(object sender, EventArgs e)
+        {
+            saver = new SaveFileDialog();
+            topMenuSave_Click(sender, e);
         }
     }
 }

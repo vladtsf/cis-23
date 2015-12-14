@@ -15,6 +15,11 @@ namespace Lab4.Library
             this.number = number;
         }
 
+        public static explicit operator int(LCCN lccn)
+        {
+            return lccn.Number;
+        } 
+
         public override string ToString()
         {
             string number = this.number.ToString().PadLeft(7, '0');

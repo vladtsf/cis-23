@@ -12,17 +12,24 @@ namespace Lab4.Library
     {
         public void GetObjectData(SerializationInfo info, StreamingContext context)
         {
-            info.AddValue("Books", this.ToList());
+            info.AddValue("Books", this.ToArray<BookCard>());
         }
 
         public Library(SerializationInfo info, StreamingContext context)
         {
-            List<BookCard> books = (List<BookCard>) info.GetValue("Books", typeof(List<BookCard>));
+            _deserializedBooks = (BookCard[]) info.GetValue("Books", typeof(BookCard[]));
+        }
 
-            foreach(BookCard book in books)
+        // used for deserialization
+        private BookCard[] _deserializedBooks;
+
+        [OnDeserialized]
+        private void RestoreBooks(StreamingContext context) {
+            foreach (BookCard book in _deserializedBooks)
             {
                 this.Add(book);
             }
+            _deserializedBooks = null;
         }
 
         public Library() : base() { }
@@ -64,11 +71,3 @@ namespace Lab4.Library
         }
     }
 }
-
-
-/*
-Testing the Library class
-Title   Author  LCCN
-C# 5.0 in a Nutshell: The Definitive Reference  Joseph Albahari, Ben Albahari   12-34560
-Microsoft Visual C# 2013 Step by Step (Step by Step Developer)  John Sharp  12-34561
-*/

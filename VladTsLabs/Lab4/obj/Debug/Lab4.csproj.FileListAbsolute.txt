@@ -8,3 +8,4 @@ C:\Users\vladt\Desktop\workspace\cis-23\VladTsLabs\Lab4\obj\Debug\Lab4.csproj.Ge
 C:\Users\vladt\Desktop\workspace\cis-23\VladTsLabs\Lab4\obj\Debug\Lab4.exe
 C:\Users\vladt\Desktop\workspace\cis-23\VladTsLabs\Lab4\obj\Debug\Lab4.pdb
 C:\Users\vladt\Desktop\workspace\cis-23\VladTsLabs\Lab4\obj\Debug\Lab4.AddForm.resources
+C:\Users\vladt\Desktop\workspace\cis-23\VladTsLabs\Lab4\obj\Debug\Lab4.AboutForm.resources
